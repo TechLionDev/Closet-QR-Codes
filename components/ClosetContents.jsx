@@ -148,7 +148,7 @@ export default function ClosetContents({ COLOR }) {
             <Modal
                 isVisible={showAuthModal}
             >
-                <h1 className='text-2xl font-bold'>What's Your Name?</h1>
+                <h1 className='text-2xl font-bold'>What&apos;s Your Name?</h1>
                 <form onSubmit={saveName} className='gap-2 flex flex-col'>
                     <div className='flex flex-col gap-2'>
                         <label htmlFor='name'>Name</label>
