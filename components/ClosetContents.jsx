@@ -147,19 +147,16 @@ export default function ClosetContents({ COLOR }) {
 
             <Modal
                 isVisible={showAuthModal}
-                children={
-                    <>
-                        <h1 className='text-2xl font-bold'>What's Your Name?</h1>
-                        <form onSubmit={saveName} className='gap-2 flex flex-col'>
-                            <div className='flex flex-col gap-2'>
-                                <label htmlFor='name'>Name</label>
-                                <input id='name' type='text' className='border rounded-lg p-2' />
-                            </div>
-                            <button type='submit' className='bg-blue-600 text-white rounded-lg p-2'>Save</button>
-                        </form>
-                    </>
-                }
-            />
+            >
+                <h1 className='text-2xl font-bold'>What's Your Name?</h1>
+                <form onSubmit={saveName} className='gap-2 flex flex-col'>
+                    <div className='flex flex-col gap-2'>
+                        <label htmlFor='name'>Name</label>
+                        <input id='name' type='text' className='border rounded-lg p-2' />
+                    </div>
+                    <button type='submit' className='bg-blue-600 text-white rounded-lg p-2'>Save</button>
+                </form>
+            </Modal>
 
             <div className="min-h-screen p-4 bg-gray-100">
                 {/* Search Input */}
